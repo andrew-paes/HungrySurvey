@@ -1,0 +1,5 @@
+C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Tests\bin\Debug\Hungry.Tests.dll
+C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Tests\bin\Debug\Hungry.Tests.pdb
+C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Tests\obj\Debug\Hungry.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Tests\obj\Debug\Hungry.Tests.dll
+C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Tests\obj\Debug\Hungry.Tests.pdb
