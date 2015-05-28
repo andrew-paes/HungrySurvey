@@ -12,16 +12,18 @@ namespace Hungry.Model
     [Table("LunchVotes")]
     public class LunchVote : AuditableEntity<long>
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
+
+        public Nullable<System.DateTime> Date { get; set; }
 
         [Display(Name = "Usuário")]
-        public int UserId { get; set; }
+        public int DBServerUserId { get; set; }
+
+        [ForeignKey("DBServerUserId")]
+        public virtual DBServerUser DBServerUser { get; set; }
 
         [Display(Name = "Sugestão")]
         public int LunchSuggestionId { get; set; }
-
-        [ForeignKey("UserId")]
-        public virtual DBServerUser DBServerUser { get; set; }
 
         [ForeignKey("LunchSuggestionId")]
         public virtual LunchSuggestion LunchSuggestion { get; set; }

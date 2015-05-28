@@ -9,3 +9,14 @@ C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Se
 C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.csprojResolveAssemblyReference.cache
 C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.dll
 C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.pdb
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Service.dll
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Service.pdb
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Model.dll
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Repository.dll
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\EntityFramework.dll
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Model.pdb
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\Hungry.Repository.pdb
+D:\Git\HungrySurvey\Hungry.Service\bin\Debug\EntityFramework.xml
+D:\Git\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.csprojResolveAssemblyReference.cache
+D:\Git\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.dll
+D:\Git\HungrySurvey\Hungry.Service\obj\Debug\Hungry.Service.pdb

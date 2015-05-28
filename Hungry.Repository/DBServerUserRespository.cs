@@ -20,12 +20,12 @@ namespace Hungry.Repository
 
         public DBServerUser GetById(int id)
         {
-            return _dbset.Include(x => x.LunchVote).Where(x => x.Id == id).FirstOrDefault();
+            return _dbset.Include(x => x.LunchVotes).Where(x => x.Id == id).FirstOrDefault();
         }
 
         public override IEnumerable<DBServerUser> GetAll()
         {
-            return _entities.Set<DBServerUser>().Include(x => x.LunchVote).AsEnumerable();
+            return _entities.Set<DBServerUser>().Include(x => x.LunchVotes).AsEnumerable();
         }
     }
 }
