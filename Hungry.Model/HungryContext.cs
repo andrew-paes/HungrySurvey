@@ -3,12 +3,13 @@ using Hungry.Model.Commom;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Hungry.Repository.Generics
+namespace Hungry.Model
 {
     public class HungryContext : DbContext
     {
@@ -18,9 +19,35 @@ namespace Hungry.Repository.Generics
 
         }
 
-        public DbSet<DBServerUserRespository> DBServerUsers { get; set; }
-        public DbSet<LunchSuggestionRespository> LunchSuggestions { get; set; }
+        public DbSet<DBServerUser> DBServerUsers { get; set; }
+        public DbSet<LunchSuggestion> LunchSuggestions { get; set; }
         public DbSet<LunchVote> LunchVotes { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Entity<DBServerUser>().HasKey<int>(e => e.DBServerUserId).ToTable("DBServerUser");
+
+            modelBuilder.Entity<DBServerUser>()
+            .HasMany(e => e.LunchVote)
+            .WithRequired(e => e.DBServerUser)
+            .HasForeignKey(e => e.DBServerUserId)
+            .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<LunchSuggestion>().HasKey<int>(e => e.LunchSuggestionId).ToTable("LunchSuggestion");
+
+            modelBuilder.Entity<LunchSuggestion>()
+            .Property(e => e.Description)
+            .IsFixedLength();
+
+            modelBuilder.Entity<LunchSuggestion>()
+            .HasMany(e => e.LunchVote)
+            .WithRequired(e => e.LunchSuggestion)
+            .WillCascadeOnDelete(false);
+        }
 
         public override int SaveChanges()
         {
