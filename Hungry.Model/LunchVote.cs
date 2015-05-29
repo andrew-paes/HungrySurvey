@@ -12,8 +12,9 @@ namespace Hungry.Model
     [Table("LunchVotes")]
     public class LunchVote : AuditableEntity<long>
     {
-        [Key]
-        public int LunchVoteId { get; set; }
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         public Nullable<System.DateTime> Date { get; set; }
 

@@ -12,11 +12,8 @@ namespace HungrySurvey.Module
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterAssemblyTypes(Assembly.Load("Hungry.Service"))
-
                       .Where(t => t.Name.EndsWith("Service"))
-
                       .AsImplementedInterfaces()
-
                       .InstancePerLifetimeScope();
         }
     }

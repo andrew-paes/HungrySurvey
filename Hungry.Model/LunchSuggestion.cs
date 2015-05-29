@@ -13,8 +13,9 @@ namespace Hungry.Model
     [Table("LunchSuggestion")]
     public class LunchSuggestion : AuditableEntity<long>
     {
-        [Key]
-        public int LunchSuggestionId { get; set; }
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(50)]

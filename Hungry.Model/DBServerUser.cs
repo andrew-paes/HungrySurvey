@@ -12,8 +12,9 @@ namespace Hungry.Model
     [Table("DBServerUser")]
     public class DBServerUser : AuditableEntity<long>
     {
-        [Key]
-        public int DBServerUserId { get; set; }
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(50)]

@@ -29,24 +29,24 @@ namespace Hungry.Model
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<DBServerUser>().HasKey<int>(e => e.DBServerUserId).ToTable("DBServerUser");
+            //modelBuilder.Entity<DBServerUser>().HasKey<int>(e => e.Id).ToTable("DBServerUser");
 
-            modelBuilder.Entity<DBServerUser>()
-            .HasMany(e => e.LunchVote)
-            .WithRequired(e => e.DBServerUser)
-            .HasForeignKey(e => e.DBServerUserId)
-            .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<DBServerUser>()
+            //.HasMany(e => e.LunchVote)
+            //.WithRequired(e => e.DBServerUser)
+            //.HasForeignKey(e => e.Id)
+            //.WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<LunchSuggestion>().HasKey<int>(e => e.LunchSuggestionId).ToTable("LunchSuggestion");
+            //modelBuilder.Entity<LunchSuggestion>().HasKey<int>(e => e.Id).ToTable("LunchSuggestion");
 
-            modelBuilder.Entity<LunchSuggestion>()
-            .Property(e => e.Description)
-            .IsFixedLength();
+            //modelBuilder.Entity<LunchSuggestion>()
+            //.Property(e => e.Description)
+            //.IsFixedLength();
 
-            modelBuilder.Entity<LunchSuggestion>()
-            .HasMany(e => e.LunchVote)
-            .WithRequired(e => e.LunchSuggestion)
-            .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<LunchSuggestion>()
+            //.HasMany(e => e.LunchVote)
+            //.WithRequired(e => e.LunchSuggestion)
+            //.WillCascadeOnDelete(false);
         }
 
         public override int SaveChanges()
