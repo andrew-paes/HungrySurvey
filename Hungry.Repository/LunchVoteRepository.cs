@@ -20,7 +20,7 @@ namespace Hungry.Repository
 
         public LunchVote GetById(int id)
         {
-            return _dbset.Include(x => x.LunchSuggestion).Where(x => x.Id == id).FirstOrDefault();
+            return _dbset.Include(x => x.LunchSuggestion).Where(x => x.LunchVoteId == id).FirstOrDefault();
         }
     }
 }

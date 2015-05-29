@@ -11,7 +11,7 @@ namespace HungrySurvey.Module
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(Assembly.Load("SampleArch.Repository"))
+            builder.RegisterAssemblyTypes(Assembly.Load("Hungry.Repository"))
                    .Where(t => t.Name.EndsWith("Repository"))
                    .AsImplementedInterfaces()
                   .InstancePerLifetimeScope();

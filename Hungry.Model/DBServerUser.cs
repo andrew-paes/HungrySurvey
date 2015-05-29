@@ -12,13 +12,14 @@ namespace Hungry.Model
     [Table("DBServerUser")]
     public class DBServerUser : AuditableEntity<long>
     {
-        //public int Id { get; set; }
+        [Key]
+        public int DBServerUserId { get; set; }
 
         [Required]
         [MaxLength(50)]
         [Display(Name = "Nome do Usuário")]
         public string Username { get; set; }
 
-        public virtual IEnumerable<LunchVote> LunchVotes { get; set; }
+        public virtual ICollection<LunchVote> LunchVote { get; set; }
     }
 }

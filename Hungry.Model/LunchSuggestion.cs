@@ -13,7 +13,8 @@ namespace Hungry.Model
     [Table("LunchSuggestion")]
     public class LunchSuggestion : AuditableEntity<long>
     {
-        //public int Id { get; set; }
+        [Key]
+        public int LunchSuggestionId { get; set; }
 
         [Required]
         [MaxLength(50)]
@@ -27,6 +28,6 @@ namespace Hungry.Model
 
         public Nullable<System.DateTime> Date { get; set; }
 
-        public virtual IEnumerable<LunchVote> LunchVotes { get; set; }
+        public virtual ICollection<LunchVote> LunchVote { get; set; }
     }
 }
