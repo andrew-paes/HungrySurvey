@@ -10,6 +10,7 @@ namespace Hungry.Service.Interfaces
 {
     public interface IDBServerUserService : IEntityService<DBServerUser>
     {
-        DBServerUser GetById(int Id);
+        DBServerUser GetById(long Id);
+        //IEnumerable<DBServerUser> GetAll();
     }
 }

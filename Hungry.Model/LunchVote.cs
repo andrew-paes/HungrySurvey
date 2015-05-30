@@ -14,18 +14,18 @@ namespace Hungry.Model
     {
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         public Nullable<System.DateTime> Date { get; set; }
 
         [Display(Name = "Usuário")]
-        public int DBServerUserId { get; set; }
+        public long DBServerUserId { get; set; }
 
         [ForeignKey("DBServerUserId")]
         public virtual DBServerUser DBServerUser { get; set; }
 
         [Display(Name = "Sugestão")]
-        public int LunchSuggestionId { get; set; }
+        public long LunchSuggestionId { get; set; }
 
         [ForeignKey("LunchSuggestionId")]
         public virtual LunchSuggestion LunchSuggestion { get; set; }

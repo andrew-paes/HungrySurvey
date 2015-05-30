@@ -1,7 +1,12 @@
-C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll
-C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.pdb
-C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.dll
-C:\Users\Mackunaima\Documents\Visual Studio 2012\Projects\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.pdb
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll.config
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.pdb
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.dll
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.xml
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.dll
+c:\users\mackunaima\documents\visual studio 2012\Projects\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.pdb
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll.config
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.pdb
@@ -9,5 +14,6 @@ D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.xml
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.csprojResolveAssemblyReference.cache
 D:\Git\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.dll
 D:\Git\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.pdb

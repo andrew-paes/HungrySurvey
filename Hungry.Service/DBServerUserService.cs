@@ -24,9 +24,14 @@ namespace Hungry.Service
         }
 
 
-        public DBServerUser GetById(int Id)
+        public DBServerUser GetById(long Id)
         {
             return _dbServerUserRepository.GetById(Id);
         }
+
+        //public override IEnumerable<DBServerUser> GetAll()
+        //{
+        //    return _dbServerUserRepository.GetAll();
+        //}
     }
 }

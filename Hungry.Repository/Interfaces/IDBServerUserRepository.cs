@@ -10,7 +10,7 @@ namespace Hungry.Repository.Interfaces
 {
     public interface IDBServerUserRepository : IGenericRepository<DBServerUser>
     {
-        DBServerUser GetById(int id);
-        IEnumerable<DBServerUser> GetAll();
+        DBServerUser GetById(long id);
+        //IEnumerable<DBServerUser> GetAll();
     }
 }

@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EC12AB6A-1C2B-418C-BE3E-AB5AE753CF39}</ProjectGuid>
+    <ProjectGuid>{E37F79E7-D47D-4EB2-81BE-8BBE84931222}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hungry.Repository</RootNamespace>
     <AssemblyName>Hungry.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +28,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -55,13 +52,13 @@
     <Compile Include="Generics\GenericRepository.cs" />
     <Compile Include="Generics\IGenericRepository.cs" />
     <Compile Include="Generics\IUnitOfWork.cs" />
-    <Compile Include="Interfaces\ILunchVoteRepository.cs" />
-    <Compile Include="Interfaces\ILunchSuggestionRepository.cs" />
+    <Compile Include="Generics\UnitOfWork.cs" />
     <Compile Include="Interfaces\IDBServerUserRepository.cs" />
+    <Compile Include="Interfaces\ILunchSuggestionRepository.cs" />
+    <Compile Include="Interfaces\ILunchVoteRepository.cs" />
     <Compile Include="LunchSuggestionRespository.cs" />
     <Compile Include="LunchVoteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Generics\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -69,11 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hungry.Model\Hungry.Model.csproj">
-      <Project>{3adcdb64-b75b-4970-9600-a4280c9d393d}</Project>
+      <Project>{73c7af5b-ac32-4507-9b2e-44a9b2b1ad39}</Project>
       <Name>Hungry.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

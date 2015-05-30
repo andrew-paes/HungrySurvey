@@ -28,16 +28,20 @@ namespace HungrySurvey.Controllers
             return View(_DBServerUserService.GetAll());
         }
 
+        // GET: /DBServerUser/
+        //public ActionResult Index()
+        //{
+        //    return View(db.DBServerUsers.ToList());
+        //}
+
         // GET: /DBServerUser/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(long? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            DBServerUser dbserveruser = _DBServerUserService.GetById(id.Value);
-
+            DBServerUser dbserveruser = db.DBServerUsers.Find(id);
             if (dbserveruser == null)
             {
                 return HttpNotFound();
@@ -48,8 +52,6 @@ namespace HungrySurvey.Controllers
         // GET: /DBServerUser/Create
         public ActionResult Create()
         {
-            ViewBag.Id = new SelectList(_DBServerUserService.GetAll(), "Id", "Username");
-
             return View();
         }
 
@@ -58,37 +60,30 @@ namespace HungrySurvey.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Username,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy,Id")] DBServerUser dbserveruser)
+        public ActionResult Create([Bind(Include="Id,Username,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] DBServerUser dbserveruser)
         {
             if (ModelState.IsValid)
             {
-                _DBServerUserService.Create(dbserveruser);
-
+                db.DBServerUsers.Add(dbserveruser);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            ViewBag.Id = new SelectList(_DBServerUserService.GetAll(), "Id", "Username");
 
             return View(dbserveruser);
         }
 
         // GET: /DBServerUser/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(long? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            DBServerUser dbserveruser = _DBServerUserService.GetById(id.Value);
-
+            DBServerUser dbserveruser = db.DBServerUsers.Find(id);
             if (dbserveruser == null)
             {
                 return HttpNotFound();
             }
-
-            ViewBag.Id = new SelectList(_DBServerUserService.GetAll(), "Id", "Username");
-
             return View(dbserveruser);
         }
 
@@ -97,22 +92,19 @@ namespace HungrySurvey.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Username,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy,Id")] DBServerUser dbserveruser)
+        public ActionResult Edit([Bind(Include="Id,Username,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] DBServerUser dbserveruser)
         {
             if (ModelState.IsValid)
             {
-                _DBServerUserService.Update(dbserveruser);
-
+                db.Entry(dbserveruser).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            ViewBag.Id = new SelectList(_DBServerUserService.GetAll(), "Id", "Username");
-
             return View(dbserveruser);
         }
 
         // GET: /DBServerUser/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(long? id)
         {
             if (id == null)
             {
@@ -129,19 +121,12 @@ namespace HungrySurvey.Controllers
         // POST: /DBServerUser/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(long id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            DBServerUser dbserveruser = _DBServerUserService.GetById(id);
-
-            if (dbserveruser == null)
-            {
-                return HttpNotFound();
-            }
-            return View(dbserveruser);
+            DBServerUser dbserveruser = db.DBServerUsers.Find(id);
+            db.DBServerUsers.Remove(dbserveruser);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
@@ -150,7 +135,6 @@ namespace HungrySurvey.Controllers
             {
                 db.Dispose();
             }
-
             base.Dispose(disposing);
         }
     }

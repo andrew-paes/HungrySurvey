@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2F369005-E822-4F02-9C15-87F2A6C23E1D}</ProjectGuid>
+    <ProjectGuid>{887CF854-1A72-4F4E-98F0-F32AE0E7DB80}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -103,10 +103,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Hungry.mdf" />
-    <Content Include="App_Data\Hungry_log.ldf">
-      <DependentUpon>Hungry.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -126,9 +122,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -160,19 +154,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hungry.Model\Hungry.Model.csproj">
-      <Project>{3adcdb64-b75b-4970-9600-a4280c9d393d}</Project>
+      <Project>{73c7af5b-ac32-4507-9b2e-44a9b2b1ad39}</Project>
       <Name>Hungry.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hungry.Repository\Hungry.Repository.csproj">
-      <Project>{ec12ab6a-1c2b-418c-be3e-ab5ae753cf39}</Project>
+      <Project>{e37f79e7-d47d-4eb2-81be-8bbe84931222}</Project>
       <Name>Hungry.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hungry.Service\Hungry.Service.csproj">
-      <Project>{e78c03e1-d8e5-451e-ba1a-8b606edc091e}</Project>
+      <Project>{2125bbe6-bdcb-4af3-8d64-daf23b1b406e}</Project>
       <Name>Hungry.Service</Name>
     </ProjectReference>
   </ItemGroup>
@@ -191,7 +186,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:25610/</IISUrl>
+          <IISUrl>http://localhost:48038/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3ADCDB64-B75B-4970-9600-A4280C9D393D}</ProjectGuid>
+    <ProjectGuid>{73C7AF5B-AC32-4507-9B2E-44A9B2B1AD39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hungry.Model</RootNamespace>
     <AssemblyName>Hungry.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +28,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -52,13 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commom\AuditableEntity.cs" />
-    <Compile Include="DBServerUser.cs" />
     <Compile Include="Commom\Entity.cs" />
     <Compile Include="Commom\IAuditableEntity.cs" />
     <Compile Include="Commom\IEntity.cs" />
-    <Compile Include="HungryContext.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="DBServerUser.cs" />
+    <Compile Include="HungryContext.cs" />
     <Compile Include="LunchSuggestion.cs" />
     <Compile Include="LunchVote.cs" />
     <Compile Include="Migrations\Configuration.cs" />
