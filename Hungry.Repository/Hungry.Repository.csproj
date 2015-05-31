@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBServerUserRespository.cs" />
+    <Compile Include="DBServerUserRepository.cs" />
     <Compile Include="Generics\GenericRepository.cs" />
     <Compile Include="Generics\IGenericRepository.cs" />
     <Compile Include="Generics\IUnitOfWork.cs" />
@@ -56,7 +56,7 @@
     <Compile Include="Interfaces\IDBServerUserRepository.cs" />
     <Compile Include="Interfaces\ILunchSuggestionRepository.cs" />
     <Compile Include="Interfaces\ILunchVoteRepository.cs" />
-    <Compile Include="LunchSuggestionRespository.cs" />
+    <Compile Include="LunchSuggestionRepository.cs" />
     <Compile Include="LunchVoteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

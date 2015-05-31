@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hungry.Repository", "Hungry
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hungry.Service", "Hungry.Service\Hungry.Service.csproj", "{2125BBE6-BDCB-4AF3-8D64-DAF23B1B406E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hungry.Tests", "Hungry.Tests\Hungry.Tests.csproj", "{EA2723FE-F21A-47F8-A480-C2A995B6D2FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{2125BBE6-BDCB-4AF3-8D64-DAF23B1B406E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2125BBE6-BDCB-4AF3-8D64-DAF23B1B406E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2125BBE6-BDCB-4AF3-8D64-DAF23B1B406E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2723FE-F21A-47F8-A480-C2A995B6D2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2723FE-F21A-47F8-A480-C2A995B6D2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2723FE-F21A-47F8-A480-C2A995B6D2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2723FE-F21A-47F8-A480-C2A995B6D2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
