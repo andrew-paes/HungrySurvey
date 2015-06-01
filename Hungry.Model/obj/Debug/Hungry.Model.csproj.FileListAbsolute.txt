@@ -12,7 +12,11 @@ D:\Git\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\Hungry.Model.pdb
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\HungrySurvey\Hungry.Model\bin\Debug\WebMatrix.Data.dll
+D:\Git\HungrySurvey\Hungry.Model\bin\Debug\WebMatrix.WebData.dll
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.xml
 D:\Git\HungrySurvey\Hungry.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\HungrySurvey\Hungry.Model\bin\Debug\WebMatrix.Data.xml
+D:\Git\HungrySurvey\Hungry.Model\bin\Debug\WebMatrix.WebData.xml
 D:\Git\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.dll
 D:\Git\HungrySurvey\Hungry.Model\obj\Debug\Hungry.Model.pdb
