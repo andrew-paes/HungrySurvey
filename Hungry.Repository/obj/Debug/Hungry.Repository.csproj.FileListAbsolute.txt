@@ -22,3 +22,15 @@ D:\Git\HungrySurvey\Hungry.Repository\bin\Debug\EntityFramework.SqlServer.xml
 D:\Git\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.csprojResolveAssemblyReference.cache
 D:\Git\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.dll
 D:\Git\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.pdb
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\Hungry.Repository.dll.config
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\Hungry.Repository.dll
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\Hungry.Repository.pdb
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\EntityFramework.dll
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\Hungry.Model.dll
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\Hungry.Model.pdb
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\EntityFramework.xml
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.dll
+D:\Projetos\Asp Net\HungrySurvey\Hungry.Repository\obj\Debug\Hungry.Repository.pdb
